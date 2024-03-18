@@ -1,0 +1,107 @@
+@media (max-width: 900px) {
+  .banner {
+    max-height: 50vh;
+  }
+}
+
+/* MENU RESPONSIVO */
+@media (max-width: 680px) {
+
+  .search {
+    display: none;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+.nav-menu{
+        width:100%;
+        position: fixed;
+        z-index: 1;
+        top: -1000px;
+        left:0;
+        gap:0;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 76vh;
+        transition: .5s;
+        background-color: var(--color-transparent);
+}
+
+  .nav-menu li {
+    margin: 2rem 0;
+  }
+
+  .active {
+    top: 0;
+  }
+  .header li:hover::after {
+    width: 0;
+  }
+  .hamburguer.active .barra:first-child {
+    transform: translateY(8px) rotate(360deg) rotate(45deg);
+  }
+  .hamburguer.active .barra:last-child {
+    transform: translateY(-8px) rotate(-360deg) rotate(-45deg);
+  }
+}
+
+/* BANNER RESPONSIVO */
+@media (max-width: 768px) {
+  .titles-box {
+    left: 0; /* Posiciona o título centralizado em telas menores */
+    top: 8rem;
+  }
+
+  .banner h2 {
+    font-size: 3.5vmax; /* Reduz o tamanho do título */
+  }
+
+  .banner h3 {
+    font-size: 1.8vmax; /* Reduz o tamanho do subtítulo */
+  }
+
+  .btn {
+    padding: 14px 40px; /* Reduz o tamanho do botão */
+  }
+}
+
+/* LOJA RESPONSIVA */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column; /* Organiza os cartões em colunas */
+    align-items: center;
+  }
+
+  .card-item {
+    /* width: 80%; Reduz a largura dos cartões */
+    margin-bottom: 20px; /* Espaçamento entre os cartões */
+  }
+
+  .card-item img {
+    height: auto; /* Permite que a altura das imagens se ajuste automaticamente */
+    max-height: 200px; /* Define uma altura máxima para as imagens */
+  }
+}
+@media (max-width: 500px) {
+  .card-item {
+    width: 75%;
+    height: auto;
+  }
+
+  .btn-card {
+    padding: 1rem 3.4rem;
+  }
+}
+/* FOOTER RESPONSIVO */
+@media (max-width: 768px) {
+  footer {
+    padding: 10px; /* Reduz o espaçamento interno do rodapé */
+  }
+
+  .footer-container p {
+    font-size: 12px; /* Reduz o tamanho do texto no rodapé */
+  }
+}

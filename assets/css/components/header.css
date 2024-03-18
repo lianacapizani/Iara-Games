@@ -1,0 +1,106 @@
+/****************** header da página ******************/
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-blue-200);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 0 20px;
+  line-height: 3rem;
+  /* margin-bottom: 200px; Garante que o header fique acima de outros elementos */
+}
+
+.logo {
+  width: 20%;
+}
+
+.logo img {
+  width: 12rem;
+  height: 6rem;
+}
+
+.search-nav-container {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0px;
+}
+
+.search {
+  display: flex;
+  white-space: nowrap;
+
+  & .search-item {
+    height: 3.2rem;
+    background-color: var(--color-light);
+    padding: 0 2rem;
+    border: 1px solid var(--color-blue-200);
+    border-radius: 0.88rem;
+    color: var(--color-blue-400);
+    font-size: 1.4rem;
+    transition: var(--transition);
+    font-weight: 200;
+  }
+
+  & .icon {
+    color: var(--color-blue-200);
+    font-size: 1.4rem;
+    position: relative;
+    right: 2.8rem;
+    top: 0.9rem;
+    cursor: pointer;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+.nav-menu li {
+  text-align: center; 
+  padding: 1rem;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease; 
+}
+
+.nav-menu a {
+  display: block; /*Para cobrir toda a largura do item li */
+  color: white;
+  font-size: 1.6rem;
+  
+}
+
+.nav-menu li:hover {
+  border-bottom: 2px solid var(--color-blue-000);
+  padding-bottom: 9.5px; /* para ajustar a altura e nao ficar aumentando a altura do header-container*/
+}
+
+/****************** menu hamburguer ******************/
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+.barra{
+    display: block;
+    width: 2rem;
+    background-color: var(--color-light);
+    height: .2rem;
+    margin:.5rem auto;
+    border-radius: 7px;
+    transition: .5s;
+
+}
