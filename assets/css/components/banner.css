@@ -7,7 +7,7 @@
       rgba(40, 40, 78, 0.4) 55%,
       rgba(0, 0, 0, 0.6) 100%
     ), */
-    url(../../images/2BG2.png);
+    url(../../images/Banner1.png);
   background-size: cover;
   color: var(--color-light);
   min-height: 80vh;
@@ -47,14 +47,14 @@
 
 .btn {
   margin-top: 10px;
-  background: var(--color-green-400);
+  background:  #ffa500;
   border-radius: 8px;
-  color: var(--color-light);
+  color: var(--color-blue-400);
   padding: 16px 50px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.5s;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .btn:hover {
