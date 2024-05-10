@@ -4,6 +4,7 @@
 @import url("./components/store.css");
 @import url("./components/footer.css");
 @import url("./components/responsive.css");
+@import url("base-store.css");
 
 :root {
   --body-font: "Quicksand", sans-serif;

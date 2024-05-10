@@ -1,3 +1,5 @@
+@import url("./components/store.css");
+
 .grid-container {
   padding: 1rem 0;
   background-color: var(--color-blue-600);
@@ -77,29 +79,3 @@
     color: var(--color-blue-200);
   }
 }
-
-/* 
-.titles {
-    margin:0;
-    font-family: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: var(--color-blue-600);
-    color: var(--color-light);
-    padding: 2rem;
-}
-
-.titles h2 {
-    font-size: 3rem;
-    padding-bottom: 1rem;
-    body
-}
-
-.titles h3 {
-    font-size: 2rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-} */

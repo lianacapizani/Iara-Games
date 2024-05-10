@@ -156,3 +156,68 @@ margin-bottom: 1.2rem;
   background-color: transparent;
   color: var(--color-blue-200);
 }
+
+
+
+/* CARROUSEL*/
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-height: 75vh;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  display: block;
+}
+
+.carousel .slides {
+  position: relative;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel .slide {
+  flex: 0 0 100%;
+}
+
+.carousel .controls {
+  position: absolute;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel .arrow {
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--color-light);
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+  background-color: #8080804e;
+  border-radius: 100%;
+}
+
+.carousel .indicators-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel .indicator {
+  cursor: pointer;
+  height: .25rem;
+  width: 8rem;
+  background-color: var(--color-blue-600);
+  margin: 0 3px; /* Espaçamento entre os indicadores */
+}
+
+.carousel .indicator.active {
+  background-color: var(--color-blue-000)
+}
