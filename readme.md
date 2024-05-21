@@ -7,6 +7,7 @@ Iara Games
 HTML5: como linguagem de marcação
 CSS: para estilizar as páginas
 VSCode: como plataforma de desenvolvimento do projeto
+JavaScript: para dar interatividade à página
 
 ## REPOSITÓRIO DE ARMAZENAMENTO:
 Github
