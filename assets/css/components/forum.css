@@ -1,0 +1,483 @@
+/* --------TOPICOS RECENTES---------- */
+
+.forum-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 0;
+  gap: 6rem;
+}
+
+.title-section {
+  display: flex;
+  height: 30vh;
+  padding: 6rem 16rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  flex-shrink: 0;
+  margin: 2rem;
+
+  & h2 {
+    color: var(--color-blue-600);
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4rem;
+  }
+}
+
+.recent-topics-cards {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  /* align-self: stretch; */
+}
+
+.recent-topics-card {
+  cursor: pointer;
+  display: flex;
+  width: 48rem;
+  height: 15rem;
+  flex-wrap: wrap;
+  padding: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  border-radius: 0.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  & .recent-topics-card-img {
+    width: 30%;
+    align-self: stretch;
+    border-radius: 0.8rem;
+
+    & img {
+      width: 15rem;
+      height: 12rem;
+      border-radius: 0.8rem;
+      object-fit: cover;
+    }
+  }
+
+  & .recent-topics-card-text {
+    width: 70%;
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.4rem;
+    background-color: var(--color-light);
+    color: var(--color-blue-600);
+    font-size: 1.8rem;
+    transition: var(--transition);
+
+    & h4 {
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: var(--color-blue-600);
+    }
+
+    & p {
+      font-size: 1.2rem;
+      font-weight: 200;
+      color: var(--color-grey-600);
+    }
+
+    & .user-card-infos {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin: 1rem 0;
+
+      & img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 100%;
+        object-fit: cover;
+      }
+
+      & h5 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: var(--color-blue-600);
+      }
+    }
+  }
+}
+
+/* --------TOPICOS Mais Comentados---------- */
+
+.section2 {
+  flex: 1, 0, 0;
+  background-color: #393a810e;
+  height: 50rem;
+}
+
+.more-commented-topics-cards {
+  display: flex;
+  align-items: space-between;
+  gap: 8rem;
+}
+
+.more-commented-topics-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem;
+}
+
+.more-commented-topics-card-img img {
+  border-radius: 1rem;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+
+.more-commented-topics-card-text {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  transition: var(--transition);
+  gap: 0.8rem;
+}
+
+.more-commented-topics-card-text h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-blue-600);
+}
+
+.more-commented-topics-card-text h4 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--color-blue-600);
+}
+
+.more-commented-topics-card-text p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: var(--color-grey-600);
+}
+
+/* MODAL */
+
+.modal {
+  display: none; /* Oculto por padrão */
+  position: fixed;
+  z-index: 1; /* Coloca o modal acima de outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Habilita scroll se necessário */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close {
+  color: var(--color-grey-600);
+  float: right;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 2rem;
+  border: 1px solid #888;
+  width: 50%;
+  padding: 2rem 3rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h1 {
+  font-size: 3.2rem;
+  margin: 1rem auto 2rem;
+  color: var(--color-blue-200);
+}
+
+.modal-content p {
+  font-size: 1.6rem;
+  color: #6c757d;
+  margin-bottom: 4.2rem;
+}
+
+.form-group {
+  margin: 0 0 25px 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--color-blue-400);
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-grey-600);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-select {
+  width: 100%;
+  padding: px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.required {
+  color: red;
+}
+
+.form-text,
+.category {
+  display: block;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.actions-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2rem auto 1.6rem;
+}
+
+.btn {
+  width: 50%;
+  padding: 1rem auto;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+  border: 1px solid #ffffff00;
+  color: #ffffff;
+}
+
+.btn-cancel:hover {
+  background-color: transparent;
+  border-color: #6c757d;
+  color: #6c757d;
+}
+.btn-create-topic {
+  background-color: var(--color-yellow-600);
+  color: #ffffff;
+}
+
+.btn-create-topic:hover {
+  background-color: var(--color-yellow-400);
+  color: #ffffff;
+}
+
+textarea {
+  resize: none;
+  border-radius: 0.8rem;
+}
+
+/* ------MEDIA QUERIES------ */
+@media (max-width: 1200px) {
+ .banner-forum {
+    height: 50vmax;
+  }
+
+  .titles-box-forum {
+    margin: 0.8rem;
+  }
+
+  .search-forum {
+    margin: 2rem 0 0 0;
+    position: relative;
+    width: 30rem;
+    height: 3.6rem;
+  }
+
+  .icon-search {
+    right: 1.3rem;
+    top: 1.8rem;
+  }
+
+  .btn-banner-forum {
+    padding: 0.4rem 3.2rem;
+    font-size: 1.4rem;
+  }
+
+  .title-section {
+    padding: 4rem 8rem;
+    margin: 12rem;
+  }
+
+  .title-section h2 {
+    font-size: 3rem;
+  }
+
+  .recent-topics-cards {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .recent-topics-card-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .recent-topics-card-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .recent-topics-card-text {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* section 2 */
+.more-commented-topics-cards {
+  gap: 4rem;
+}
+
+.more-commented-topics-card {
+  gap: 0.8rem;
+}
+
+.more-commented-topics-card-img img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.more-commented-topics-card-text {
+  gap: 0.6rem;
+}
+
+@media (max-width: 768px) {
+  
+  .banner-forum {
+    height: 60vh;
+  }
+
+  .titles-box-forum {
+    margin: 0.8rem;
+
+    /* & p{
+      font-size: 1.4rem;
+    } */
+  }
+
+  .search-forum {
+    margin: 2rem 0 0 0;
+    position: relative;
+    width: 30rem;
+    height: 3.6rem;
+  }
+
+  .icon-search {
+    right: 1.3rem;
+    top: 1.8rem;
+  }
+
+  .btn-banner-forum {
+    padding: 0.4rem 3.2rem;
+    font-size: 1.4rem;
+  }
+
+  .title-section {
+    padding: 2rem 1.8rem;
+    top: 2rem;
+  }
+
+  .title-section h2 {
+    font-size: 3rem;
+  }
+
+  .recent-topics-card {
+    gap: 1.2rem;
+    width: 40rem;
+    height: 14rem;
+    padding: 1rem;
+  }
+
+  .recent-topics-card-img img {
+    width: auto;
+    object-fit: cover;
+  }
+
+  .recent-topics-card-text,
+  .more-commented-topics-card-text h4 {
+    width: 100%;
+    padding: 0rem;
+    font-size: 1.4rem;
+  }
+
+  .recent-topics-card-text h3,
+  .more-commented-topics-card-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .recent-topics-card-text p,
+  .more-commented-topics-card-text p {
+    font-size: 1rem;
+  }
+
+  .user-card-infos {
+    margin: 0rem;
+    padding: 0;
+  }
+
+  .user-card-infos h5 {
+    font-size: 1.2rem;
+  }
+}
+
+.section2 {
+  height: 80rem;
+}
+
+.more-commented-topics-cards {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.more-commented-topics-card {
+  gap: 0.8rem;
+}
+
+.more-commented-topics-card-img img {
+  width: 8rem;
+  height: 8rem;
+}

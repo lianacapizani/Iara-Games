@@ -49,14 +49,14 @@
   margin-top: 10px;
   background:  #ffa500;
   border-radius: 8px;
-  color: var(--color-blue-400);
+  color: var(--color-light);
   padding: 16px 50px;
   text-align: center;
-  font-weight: 600;
-  transition: 0.5s;
+  font-weight: 500;
+  transition: 0.1s;
   font-size: 2rem;
 }
 
 .btn:hover {
-  background: var(--color-green-200);
+  background: var(--color-yellow-200);
 }

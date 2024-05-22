@@ -9,11 +9,14 @@
 :root {
   --body-font: "Quicksand", sans-serif;
   --color-blue-000: #00ffff;
-  --color-blue-200: #393a81;
-  --color-blue-400: #283860;
-  --color-blue-600: #0c0c23;
-  --color-green-200: #00c8b4;
+  --color-blue-200: rgb(57, 58, 129);
+  --color-blue-400: rgb(40, 56, 96);
+  --color-blue-600: rgb(12, 12, 35);
+  --color-green-200: rgb(0, 200, 180);
   --color-green-400: #1c8f86;
+  --color-yellow-200: rgba(255, 194, 102, 1);
+  --color-yellow-400: rgba(255, 165, 0, 1);
+  --color-yellow-600: rgba(230, 134, 25, 1);
   --color-light: #f5f5f5;
   --color-grey-200: #c1c1c1;
   --color-grey-600: #838383;
@@ -82,4 +85,8 @@ main.main-content {
   .menu-container ul {
     gap: 0;
   }
+}
+
+.destak{
+  color: var(--color-blue-000) !important;
 }

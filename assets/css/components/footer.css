@@ -7,11 +7,15 @@ footer {
     margin-top: auto;
     padding: 15px;
     
-    & .footer-container p {
+    & .footer-container ul {
     color: var(--color-grey-200);
     margin: 0;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
     font-weight: 400;
     font-size: 14px;
     }
 }
+
+
