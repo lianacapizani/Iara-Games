@@ -53,6 +53,6 @@ Para instruções sobre como executar a API, consulte o README no repositório [
 
   - @lianacapizani
   - @Renata088
-  - @diego conta no git
+  - @diaquinodev
 
 
