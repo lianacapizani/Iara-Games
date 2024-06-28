@@ -1,27 +1,58 @@
+## IARA GAMES 
+
+DESCRIÇÃO 
+
+Esse projeto é uma plataforma de venda de jogos online dedicada exclusivamente a jogos desenvolvidos por criadores brasileiros. Nosso objetivo é promover e destacar talentosos desenvolvedores brasileiros e fomentar a indústria nacional de games, trazendo mais visibilidade e oportunidades! 
+
+LINGUAGENS UTILIZADAS
+
+- Frontend: HTML5, CSS3 e JavaScript
+- Backend: Phyton 
+- VSCODE
+- Banco de Dados: pgAdmin 4
+- Integração API: FastAPI para atualização dinâmica dos jogos
+
+<br/>
+
+## FUNCIONALIDADES PRINCIPAIS
+
+- Integração com a API para listagem de jogos na loja
+- Exibição de jogos na seção da loja
+
+<br/>
+
+## Configurar o Ambiente de Desenvolvimento do Front-End
+
+1. Navegar para o diretório do front-end:
+  cd ../Iara-Games
+
+3. Certificar-se de estar na branch correta:
+    git checkout feat_api_integration
+
+5. Abrir o arquivo index.html no navegador:
+  - No Windows:
+    Navegue até o diretório do projeto e clique duas vezes no arquivo index.html.
+    
+  - No macOS/Linux:
+    Navegue até o diretório do projeto e use um navegador para abrir o arquivo index.html.
+    
+<br/>
 
 
-## TÍTULO DO PROJETO:
-Iara Games
+## CONECTANDO-SE À API
 
-## LINGUAGENS UTILIZADAS:
-HTML5: como linguagem de marcação
-CSS: para estilizar as páginas
-VSCode: como plataforma de desenvolvimento do projeto
-JavaScript: para dar interatividade à página
+Este front-end se conecta à API listada no repositório Iara-Games-API. Certifique-se de que a API está em execução antes de testar a listagem de jogos na loja.
 
-## REPOSITÓRIO DE ARMAZENAMENTO:
-Github
+Para instruções sobre como executar a API, consulte o README no repositório [Iara-Games-API](https://github.com/lianacapizani/Iara-Games-API/blob/main/README.md)
 
-## OBJETIVO DO PROJETO:
-Este projeto visa apoiar os desenvolvedores brasileiros de jogos, oferecendo uma plataforma para os usuários acessarem e escolherem os jogos.
+<br>
 
-## VISÃO DO SITE:
-A estrutura do site é composta por uma página inicial contendo os principais elementos de interação, como:
 
-## Menus superiores para navegar entre as seções do site.
-Abaixo dos menus, estão os cards mostrando os jogos disponíveis para escolha. Os usuários podem selecionar o jogo que desejam conhecer e decidir jogar.
-PRÓXIMA FASE:
-Estamos planejando adicionar mais interações e funcionalidades ao site.
 
-## 3 ACESSIBILIDADE:
-Para garantir acessibilidade, implementamos as tags alt e title no HTML com descrições adequadas das imagens, proporcionando uma experiência inclusiva para todos os usuários.
+  ## CONTRIBUIDORES:
+
+  - @lianacapizani
+  - @Renata088
+  - @diego conta no git
+
+
