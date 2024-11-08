@@ -6,6 +6,7 @@
 @import url("./components/responsive.css");
 @import url("base-store.css");
 
+
 :root {
   --body-font: "Quicksand", sans-serif;
   --color-blue-000: #00ffff;

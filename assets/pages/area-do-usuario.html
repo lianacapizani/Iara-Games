@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Goggle Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integritycenter;2-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Área do usuário</title>
+
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components/area-do-usuario.css" />
+
+</head>
+<body>
+    <header class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="../images/Logo2.jpg" alt="Iara Games Logo" />
+      </div>
+      <div class="search-nav-container">
+        <!-- Pesquisar -->
+        <form action="" method="get" name="" class="search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Pesquisar jogo"
+            class="search-item"
+          />
+          <i class="fas fa-search icon"></i>
+        </form>
+
+        <!--navbar  -->
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="../../index.html" class="item-menu">Início</a></li>
+            <li><a href="store.html" class="item-menu">Loja</a></li>
+            <li><a href="user-area.html" target="_blank" class="item-menu">Área do Usuário</a></li>
+            <li><a href="forum.html" class="item-menu destak">Fórum</a></li>
+            <li><a href="support.html" class="item-menu">Suporte</a></li>
+          </ul>
+        </nav>
+
+        <!--Barras do Menu hamburguer-->
+        <div class="hamburguer">
+          <span class="barra"></span>
+          <span class="barra"></span>
+          <span class="barra"></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-box">
+        <div class="form-box">
+                <h2>Login</h2>
+                <form id="" name="" method="post" action="">
+                    <div class="input-box">
+                        <label for="nome">Usuário</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@mail.com" >
+                    </div>
+                    <div class="input-box">
+                        <label for="senha">Senha</label>
+                        <div class="password-container">
+                            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" minlength="7"> 
+                            <i class="fas fa-eye" id="togglePassword"></i>
+                        </div>
+                    </div>
+                    <div class="remember">
+                        <label>
+                            <input type="checkbox"> Lembrar de mim
+                        </label>
+                        <a href="#">Esqueceu a Senha?</a>
+                    </div>
+                    <div class="input-box">
+                        <button type="button" id="loginBtn"  class="btn-login">Fazer Login</button>
+                    </div>
+                </form>
+                <div class="log-options">
+                    <hr class="divider">
+                    <span class="login-text">Ou faça o login com:</span>
+                    <div class="login-buttons">
+                        <button class="login-btn google">
+                            <img src="../images/login/google.svg" alt="Google"> Google
+                        </button>
+                        <button class="login-btn facebook">
+                            <img src="../images/login/facebook.svg" alt="Facebook"> Facebook
+                        </button>
+                        <button class="login-btn microsoft">
+                            <img src="../images/login/microsoft.svg" alt="Microsoft"> Microsoft
+                        </button>
+                    </div>
+                </div>
+                <div class="new-user">
+                    <p>Ainda não possui cadastro na Iara Games? <br> 
+                        Cadastre-se <a href="../pages/cadastro.html"><b>aqui</b></a>
+                    </p> 
+                </div>
+        </div>
+    </section>
+    <script src="../js/login/login.js"></script>
+    <script src="../js/login/password.js"></script>
+
+</body>
+</html>
